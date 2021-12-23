@@ -1,10 +1,18 @@
+@extends('layouts.default')
 
 
-@foreach ($movies as $movie)
-<li><h1>{{ $movie['title']}}</h1>
-    <h3>{{ $movie['original_title']}}</h3>
-    <p>{{ $movie['nationality']}}</p>
-    <p>{{ date('d/m/Y', strtotime($movie['date'])) }}</p>
-    <p>{{ $movie['vote']}}</p>
-</li>
-@endforeach
+@section('page_title', 'Movies')
+
+@section('content')
+    <div class="container">
+        <div class="row row-cols-3">
+            @foreach ($movies as $movie)
+                <div class="col ">
+                    @include('partials.card')
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+
+@endsection

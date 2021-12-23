@@ -1,0 +1,23 @@
+body {
+  background-color: #B1D0E0;
+  color: white;
+}
+
+body header {
+  background-color: #6998AB;
+}
+
+body .movies {
+  color: #1A374D;
+}
+
+body .card {
+  list-style: none;
+  background-color: #406882;
+  min-height: 350px;
+}
+
+body .card .title {
+  color: bisque;
+}
+

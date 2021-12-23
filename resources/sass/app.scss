@@ -1,1 +1,21 @@
-//
+body {
+    background-color: #B1D0E0;
+    color: white;
+
+    header {
+        background-color: #6998AB;
+    }
+
+    .movies {
+        color: #1A374D
+    }
+
+    .card {
+        list-style: none;
+        background-color: #406882;
+        min-height: 350px;
+        .title {
+            color: bisque;
+        }
+    }
+}
